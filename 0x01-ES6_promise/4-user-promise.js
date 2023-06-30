@@ -1,3 +1,12 @@
 export default function signUpUser(firstName, lastName) {
-  return Promise.resolve({ firstName, lastName });
+  const input = {
+    firstName: `${firstName}`,
+    lastName: `${lastName}`
+  };
+
+  const promise = new Promise((resolve) => {
+    resolve(input);
+  });
+
+  return promise;
 }
