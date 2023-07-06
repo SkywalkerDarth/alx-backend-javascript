@@ -28,11 +28,9 @@ export interface IStudentClass {
   displayName(): string;
 }
 
-export class StudentClass implements IStudentClass {
-  private _firstName!: string;
-  private _lastName!: string;
-}
-
+export class Student implements StudentClass {
+  private firstName: string;
+  private lastName: string;
 
   constructor(firstName: string, lastName: string) {
     this._firstName = firstName;
